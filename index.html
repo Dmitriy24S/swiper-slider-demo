@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ===== Font Awesome ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <!-- JS -->
+    <script src="script.js" defer></script>
+    <title>Swiper slider - Demo</title>
+  </head>
+  <body>
+    <main>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- 9 slides here -->
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </main>
+
+    <!-- template -->
+    <template data-card-template>
+      <div class="swiper-slide card">
+        <article
+          class="card-content z-10 text-center flex flex-col gap-2 items-center justify-center p-7 relative"
+        >
+          <div class="card__img-container h-36 w-36 rounded-full overflow-hidden p-1 bg-purple-600">
+            <img
+              src="./images/img1.jpg"
+              alt="profile"
+              class="card__img object-cover rounded-full w-full h-full"
+            />
+          </div>
+          <div class="card__media-icons absolute flex flex-col top-4 right-4 gap-4">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="card__name-profession-container">
+            <div class="card__name font-bold text-xl">Someone Name</div>
+            <div class="card__profession font-medium">Web Developer</div>
+          </div>
+          <div class="card__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="card__button-container flex justify-around items-center w-full mt-3">
+            <button
+              class="card__button px-6 py-2 rounded-3xl bg-purple-500 text-white text-sm hover:bg-purple-600 transition-colors"
+            >
+              About me
+            </button>
+            <button
+              class="card__button px-6 py-2 rounded-3xl bg-purple-500 text-white text-sm hover:bg-purple-600 transition-colors"
+            >
+              Hire me
+            </button>
+          </div>
+        </article>
+      </div>
+    </template>
+  </body>
+</html>
